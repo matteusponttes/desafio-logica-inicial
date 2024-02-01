@@ -2,9 +2,8 @@ let nomeHeroi = "Luffy"
 let elo = ["Ferro", "Bronze", "Prata", "Ouro", "Platina", "Ascendente", "Imortal", "Radiante"]
 let classificacao
 let nivel = 4000
-let verElo = "não"
+let verElo = "sim"
 let pocaoCrescimento = 1000
-const subirNivel = "Deseja subir de nível?"
 
 if (verElo === "não"){
     nivel = nivel + pocaoCrescimento
@@ -36,12 +35,8 @@ if (nivel > 10000){
 }
 
 if (verElo === "sim"){
-    console.log("Deseja ver seu elo?")
     console.log("O Herói de nome '" + nomeHeroi + "' está no nível '" + classificacao + "'.")
 }
 else{
-    console.log(subirNivel)
     console.log("O seu herói ganhou +" + pocaoCrescimento + "XP!")
-    console.log("O Herói de nome '" + nomeHeroi + "' está no nível '" + classificacao + "'.")
 }
-
